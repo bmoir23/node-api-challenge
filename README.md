@@ -38,15 +38,25 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [ *] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+Express allows you to simply and easily create back end applications in Node. Express is also widely used and widely recognized, it imports and exports a lot like react
 
-- [ ] Describe a Resource?
+- [ *] Describe Middleware?
 
-- [ ] What can the API return to help clients know if a request was successful?
+is software or code that lies between an operating system and the applications running on it.
 
-- [ ] How can we partition our application into sub-applications?
+- [ *] Describe a Resource?
+
+A resource is simply an object, which defines one of more of the supported actions used in express
+
+- [* ] What can the API return to help clients know if a request was successful?
+
+a Json object
+
+- [ *] How can we partition our application into sub-applications?
+
+By splitting the Express application into sub-apps, the app. js file can have it's responsibilities split as well. Each sub-app will configure what it needs, while allowing the Express host app to configure the defaults or root-level settings.
 
 ## Minimum Viable Product
 
