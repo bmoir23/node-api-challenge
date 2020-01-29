@@ -74,7 +74,7 @@ server.put('/api/actions/:id', validateActionId, validateAction, (req, res) =>{
 server.delete('/api/actions/:id', validateAction, (req, res) =>{
     try{
         actionsDb.remove(req.post)
-        .then(response => res.sendStatus(204));
+        .then(res => res.sendStatus(204));
     } catch{
         res.status(500).json({ error: ' an error has occurred'})
     }
@@ -127,7 +127,7 @@ server.put('/api/projects/:id', validateProjectId, validateProject, (req, res) =
 server.delete('/api/projects/:id', validateProjectId, (req, res) => {
     try{
         projectDb.remove(req.post)
-        .then(response => res.sendStatus(204));
+        .then(res => res.sendStatus(204));
     } catch{
         res.status(500).json({ error: ' an error has occurred'})
     }
